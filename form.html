@@ -1,0 +1,48 @@
+<doctypehtlm>
+    <html>
+    <head>
+    <title>
+    check Attendance
+    </title>
+    
+    <style>
+        p{
+        margin-top:150px;
+    }
+    </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function form(){
+                var date=document.getElementById("Date").value;
+                var ID=document.getElementById("id").value;
+                var text=document.getElementById("text").value;
+                if (date=="" ||id=="" || text==""){
+                    alert("All fields are mandatory");
+                }
+
+            }
+            
+            
+            </script>
+<p>
+<form onsubmit="form()"  align="center" >
+    <h2>Check Attendance</h2>
+    Date:<input type="date" name="Date" id="Date"><br><br>
+    
+    Type:<select id="id" name="id">
+        <option value="Student" id="Student">Student</option>
+        <option value="Employee" id="Employee">Employee</option>
+    </select><br><br>
+    <input type="text" id="text" placeholder="12345"><br><br>
+    <input type="submit" value="Check"  id="check"><br><br>
+    Name:<br><br>
+    Status:<br><br>
+    Checkin<br><br>
+    CheckOut
+    
+    
+</form>
+</p>
+</body>
+</html>
